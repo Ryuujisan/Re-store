@@ -1,0 +1,79 @@
+﻿*.swp
+*.*~
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Fleet
+.fleet/
+
+# Code Rush
+.cr/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# .NET publish output
+[Pp]ublish/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Entity Framework migrations bundle
+efbundle.exe
+
+# ASP.NET Core static web assets
+staticwebassets/
+*.staticwebassets.runtime.json
+
+# User secrets
+secrets.json
+
+# Test coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# Application settings overrides
+appsettings.*.user.json
+
+# Node.js build artifacts
+node_modules/
+package-lock.json
+package.json
