@@ -1,5 +1,6 @@
 import type {Product} from "../../app/models/product.ts";
-import {Button, Card, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
+import {Button, Card, CardActions, CardContent, CardMedia,Typography} from "@mui/material";
+import {Link} from "react-router-dom";
 
 type Props = {
     product: Product
@@ -36,7 +37,7 @@ export const ProductCard = ({product}: Props) => {
           <CardActions
           sx={{justifyContent: 'space-between'}}>
               <Button>Add to Cart</Button>
-              <Button>View</Button>
+              <Button component={Link} to={`/catalog/${product.id}`}>View</Button>
           </CardActions>  
         </Card>
     )

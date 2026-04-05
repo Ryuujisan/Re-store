@@ -1,13 +1,20 @@
 import type {Product} from "../../app/models/product.ts";
 import {ProductList} from "./ProductList.tsx";
 
-type Props = {
-    products: Product[]
-}
-export const Catalog = (props: Props) => {
+import {useEffect, useState} from "react";
+
+
+export const Catalog = () => {
+    const[products, setProducts] = useState<Product[]>([]);
+
+    useEffect(() => {
+        fetch('https://localhost:5001/api/products')
+            .then(response => response.json())
+            .then(data => setProducts(data))
+    },[])
     return (
         <>
-            <ProductList products={props.products}/>
+            <ProductList products={products}/>
         </>
     )
 }
